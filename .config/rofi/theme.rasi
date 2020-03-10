@@ -1,0 +1,121 @@
+configuration {
+
+    // The display name of this browser
+    display-ssh:                   "  ";
+    // The display name of this browser
+    display-run:                    "";
+    // The display name of this browser
+    display-drun:                   "";
+    // The display name of this browser
+    display-window:                 ""
+;
+    display-combi:                  "";
+    show-icons: true;
+}
+
+
+* {
+	/* Theme settings */
+	scrollbar:                   true;
+	background-color:            transparent;
+
+	foreground:                  rgba(193, 193, 193, 100%);
+	alt-foreground:              rgba(193, 193, 193,  50%);
+	highlighted-background:      rgba( 85,  54,  31,  50%);
+
+	scrollbar-background:        transparent;
+	scrollbar-handle:            @alt-foreground;
+
+	text-color: @foreground;
+   	// Green
+    	green:       #86af80;
+    	lightgreen:  #88cc22;
+    	//
+	emphasis:   #50536b;
+}
+
+#window {
+	border: none;
+	width: 100%;
+	height: 100%;
+	location: north;
+	anchor: north;
+	children: [mainbox, dummy];
+	background-color: rgba(10,10,10,0.6);
+	font: "Fira code 14";
+}
+
+#dummy {
+	expand: true;
+}
+
+#mainbox {
+	spacing: 5px;
+	expand: false;
+	padding: 10px;
+	margin: 25% 25%;
+	background-color: rgba(20,20,20,0.97);
+	border: 2px;
+	border-color: #b2b2b2;
+	border-radius:10px;
+}
+
+#element {
+	padding: 5px 10px;
+	font:       "Fira Code 12";
+	border-radius: 4px;
+	highlight: bold #95ee8f;
+	text-color: #b2b2b2;
+}
+
+#element.selected {
+	background-color: #50536b;
+	text-color: #efefef;	
+}
+#element.alternate {
+	background-color: rgba(40,40,40,0.5);
+}
+
+#inputbar {
+	border: 0px 0px 2px 0px;
+	border-color: #b2b2b2;
+	padding:    10px 2px;
+	
+	children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+#prompt {
+	text-color: @green;
+	font: "Fira Sans Light 14";
+}
+
+#textbox-prompt-colon {
+	expand: false;
+  	str: ":";
+  	text-color: #b2b2b2;
+}
+
+#scrollbar {
+	width:            0px;
+	border:           0;
+	handle-width:     2px;
+	handle-color:     @scrollbar-handle;
+	background-color: @scrollbar-background;
+	padding:          0;
+}
+
+button selected {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: @emphasis;
+}
+message {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #50536b;
+  border: 1px;
+  border-color: #efefef;
+}
+
+/* vim: set ft=scss noet :*/
+

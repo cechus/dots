@@ -1,0 +1,6 @@
+# aliases
+
+alias phpunit="./vendor/bin/phpunit"
+alias art="php artisan"
+alias yay="yay --color=auto"
+alias ee="exit"

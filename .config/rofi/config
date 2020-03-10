@@ -1,0 +1,16 @@
+rofi.modi: run#drun#window#ssh
+rofi-sidebar-mode: true
+!rofi.width: 60
+!rofi.padding: 10
+rofi.lines: 10
+!rofi.bw: 3
+!rofi.eh: 2
+rofi.show-icons: true
+!rofi.window-format:                  @ {w} {c} {t}
+!rofi.m:                              primary
+rofi.levenshtein-sort:               true
+rofi.terminal:                       termite
+!rofi.location:                       center
+rofi.theme: ~/.config/rofi/theme.rasi
+
+
